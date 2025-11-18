@@ -88,7 +88,7 @@ export class ServiceCubos{
         let apiUrl=environment.apiCubos + request;
         // CORRECCIÓN: Aplicar los encabezados aquí
         const headers = this.createAuthHeaders();
-        return this._http.post(apiUrl, { headers: headers });
+        return this._http.post(apiUrl,"", { headers: headers });
     }
 
 }
