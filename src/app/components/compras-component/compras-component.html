@@ -1,0 +1,31 @@
+<div>
+    <h1>Compras realizadas</h1>
+
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-primary"
+        >
+            <thead>
+                <tr>
+                    <th scope="col">idCubo</th>
+                    <th scope="col">idPedido</th>
+                    <th scope="col">idUsuario</th>
+                    <th scope="col">fechaPedido</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (compra of compras; track compra) {
+                    <tr>
+                        <td>{{compra.idCubo}}</td>
+                        <td>{{compra.idPedido}}</td>
+                        <td>{{compra.idUsuario}}</td>
+                        <td>{{compra.fechaPedido}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+</div>

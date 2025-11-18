@@ -1,0 +1,10 @@
+ <h1>Crear Alumno</h1>
+    <div class="form-group">
+        <form #insertCompra="ngForm">
+            <select name="selectCubo" #selectCubo class="form-control">
+            @for (cubo of cubos; track cubo) {
+                    <option value="{{cubo.idCubo}}">{{cubo.nombre}}</option>
+                }
+            </select>
+            <button (click)="insertarCompra()" class="btn btn-primary">Comprar</button>
+        </form>

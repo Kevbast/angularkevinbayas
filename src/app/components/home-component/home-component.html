@@ -1,0 +1,38 @@
+<div>
+    <h1>HOME CUBOS</h1>
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-primary"
+        >
+            <thead>
+                <tr>
+                    <th scope="col">idCubo</th>
+                    <th scope="col">nombre</th>
+                    <th scope="col">modelo</th>
+                    <th scope="col">marca</th>
+                    <th scope="col">color</th>
+                    <th scope="col">imagen</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">valoracion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (cubo of cubos; track cubo) {
+                    <tr>
+                        <td>{{cubo.idCubo}}</td>
+                        <td>{{cubo.nombre}}</td>
+                        <td>{{cubo.modelo}}</td>
+                        <td>{{cubo.marca}}</td>
+                        <td>{{cubo.color}}</td>
+                        <td><img src="{{cubo.imagen}}" style="width: 100px;height: 100px;"></td>
+                        <td>{{cubo.precio}}</td>
+                        <td>{{cubo.valoracion}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+</div>
